@@ -13,8 +13,7 @@ void main()
   {
     for(int j=1; j<=10; j++)
     { 
-      int a = i*j;
-      print("$i * $j = $a");
+      print("$i * $j = ${i*j}");
     }
     print("\n");
   }
