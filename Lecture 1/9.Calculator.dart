@@ -10,27 +10,21 @@ void main()
   stdout.write("Enter second no.: ");
   int y = int.parse(stdin.readLineSync()!);
 
-  int add = x+y;
-  int mul = x*y;
-  double div = x/y;
-  int sub = x-y;
-  int per = x%y;
-
   switch(op)
   {
-    case '+' : print("$x + $y = $add");
+    case '+' : print("$x + $y = ${x+y}");
     break;
 
-    case '-' : print("$x - $y = $sub");
+    case '-' : print("$x - $y = ${x-y}");
     break;
 
-    case '*' : print("$x * $y = $mul");
+    case '*' : print("$x * $y = ${x*y}");
     break;
 
-    case '/' : print("$x / $y = $div");
+    case '/' : print("$x / $y = ${x/y}");
     break;
 
-    case '%' : print("$x % $y = $per");
+    case '%' : print("$x % $y = ${x%y}");
     break;
 
     default : print("Pls choose valid operator...!");
